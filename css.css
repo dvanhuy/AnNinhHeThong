@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+section{
+    position: relative;
+    margin-top: 20px;
+}
+.title_note{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.title_note div{
+    text-align: center;
+}
+
+.title_note div:first-child{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 30px;
+}
+
+.section_1{
+    font-size: 20px;
+    display: flex;
+    height: 100px;
+}
+.section_1 > div{
+    width: 50%;
+    position: relative;
+}
+
+.button_tinh{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+input{
+    font-size: 22px;
+    width: 80px;
+}
