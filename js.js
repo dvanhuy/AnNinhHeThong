@@ -30,10 +30,9 @@ buttontinh.addEventListener("click",()=>{
     result += "} (Lấy số nhỏ nhất)"
     result += "<br />𝑃𝑈 = {"+soe+", "+n+"}"
     result += "<br />𝑃𝑅 = {"+sod+", "+n+"}"
-    soC = som**soe % n;
-    result += "<br />Với M = "+som+" thì C = M^e mod n = "+soC
+    let soC = bigInt(som).pow(soe).mod(n);
+    result += "<br />Với M = "+som+" thì C = M^e mod n ="+som+"^"+soe+" mod "+n+" ="+soC
     let soMlan2 = bigInt(soC).pow(sod).mod(n)
-    console.log(soC,sod,n);
-    result += "<br />Thử lại thì M ="+soC+"^"+sod+" mod "+n+" = "+ soMlan2 + "(Nên tính lại)"
+    result += "<br />Thử lại thì M = C^d mod n = "+soC+"^"+sod+" mod "+n+" = "+ soMlan2 + " (Nên tính lại)"
     resultsc.innerHTML = result
 })
