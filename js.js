@@ -32,6 +32,8 @@ buttontinh.addEventListener("click",()=>{
     result += "<br />𝑃𝑅 = {"+sod+", "+n+"}"
     soC = som**soe % n;
     result += "<br />Với M = "+som+" thì C = M^e mod n = "+soC
-    result += "<br />Thử lại thì M = C^d mod n = "+(soC**sod %n)
+    let soMlan2 = (soC**sod) %n;
+    console.log(soC,sod,n);
+    result += "<br />Thử lại thì M ="+soC+"^"+sod+" mod "+n+" = "+ soMlan2 + "(Js nó ngu khi tính số lớn)"
     resultsc.innerHTML = result
 })
